@@ -1,0 +1,182 @@
+<apex:page readOnly="true" controller="PaymentInvoiceHelper" applyHtmlTag="false" sidebar="false" showHeader="false" cache="true" renderAs="advanced_pdf" docType="html-5.0">
+    <html>
+        <head>
+            <style type="text/css">
+                @page {
+                padding-left: 5px;    
+                padding-right: 5px;      
+                }
+                th {  
+                font-weight: bold;
+                text-align: center;
+                background-color: #92d5f0;
+                color: black;
+                padding: 8px;
+                }
+                td {    
+                font-size: 15px;
+                text-align: left;
+                padding: 8px;
+                }
+                table{
+                border-collapse: collapse;
+                }
+                table, th, td {
+                border: 1px solid black;
+                }
+                .topTableCol{
+                width: auto;
+                margin-right: 0px;
+                margin-left: auto;
+                }
+            </style>
+        </head>
+        
+        <body>
+            <apex:image url="{!$Resource.Logo}" width="80" height="100"/>
+            <h2>
+                <center><b>PAYMENT RECEIPT</b></center><br/>
+            </h2>
+            
+            Dear {!oppDetails.Account.Name}<br/><br/>
+            
+            Greetings from Homeskul! Thank you for making the payment to Homeskul Innolearn Pvt. Ltd.We 
+            hereby acknowledge to have received an amount of INR 20999/- against the JEE - HSB09 towards Student 
+            Admission Number: HSK0023.
+            <table class="topTableCol">
+                <tr>
+                    <td style="width:100%">
+                        DATE:  17-05-2022
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td style="width:100%">
+                        RECEIPT NO : 25101996/HSB09/HSK0023
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            
+            <table style="width:97%">
+                
+                <tr >
+                    <td >
+                        ADMISSION NO
+                    </td>
+                    <td >
+                        HSK0023
+                    </td>
+                </tr>
+                <tr >
+                    <td >
+                        STUDENT NAME
+                    </td>
+                    <td >
+                        Aakash Jain
+                    </td>
+                </tr>
+                <tr >
+                    <td >
+                        COURSE NAME - COURSE CODE
+                    </td>
+                    <td >
+                        JEE - HSB09
+                    </td>
+                </tr>
+                <tr >
+                    <td >
+                        COURSE FEE
+                    </td>
+                    <td >
+                        20999
+                    </td>
+                </tr>
+                <tr >
+                    <td >
+                        DOWN PAYMENT
+                    </td>
+                    <td >
+                        20999
+                    </td>
+                </tr>
+                <tr >
+                    <td >
+                        PAYMENT CATEGORY
+                    </td>
+                    <td >
+                        Full Payment
+                    </td>
+                </tr>
+                <tr >
+                    <td >
+                        AMOUNT PAID
+                    </td>
+                    <td >
+                        20999
+                    </td>
+                </tr>
+                <tr >
+                    <td >
+                        PAYMENT IN WORDS
+                    </td>
+                    <td >
+                        Twenty thousand nine hundred ninty nine
+                    </td>
+                </tr>
+                <tr >
+                    <td >
+                        PAYMENT MODE
+                    </td>
+                    <td >
+                        Net Banking
+                    </td>
+                </tr>
+                <tr >
+                    <td >
+                        TRANSACTION DETAILS
+                    </td>
+                    <td >
+                        TRANSC - 0099323
+                    </td>
+                </tr>
+                <tr >
+                    <td >
+                        EMI TENURE OPTED
+                    </td>
+                    <td >
+                        NA
+                    </td>
+                </tr>
+                <tr >
+                    <td >
+                        FUTURE INSTALMENTS DUE 
+                    </td>
+                    <td >
+                        NA
+                    </td>
+                </tr>
+                <tr >
+                    <td >
+                        FUTURE PAYMENT DUE 
+                    </td>
+                    <td >
+                        NA
+                    </td>
+                </tr>
+                <tr >
+                    <td >
+                        BIFURCATION
+                    </td>
+                    <td >
+                        NA
+                    </td>
+                </tr>
+            </table>
+            <p style="text-align:right">
+                Approved by: CFO Homeskul <br/>
+                *This is a system generated document. No signature is required
+            </p>
+        </body>
+    </html>
+</apex:page>
